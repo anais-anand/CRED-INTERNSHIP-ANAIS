@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titan</title>
+</head>
+<body>
+    <h1>This is a web application to predict survival</h1>
+    <form action="/login" method="post">
+        <p>Pclass</p>
+        <p><input type="text" name="rd"></p>
+
+        <p>Sex</p>
+        <p><input type="text" name="as"></p>
+
+        <p>Age</p>
+        <p><input type="text" name="ag"></p>
+
+        <p>SibSp</p>
+        <p><input type="text" name="ss"></p>
+
+        <p>Parch</p>
+        <p><input type="text" name="ph"></p>
+
+        <p>Fare</p>
+        <p><input type="text" name="fe"></p>
+
+        <label for="s">Choose the Embarked</label>
+        <select name="s">
+            <option value="y">1.0</option>
+            <option value="n">0.5</option>
+        </select>
+
+        <p><input type="submit" value="Submit"></p>
+
+        <h2><b>{{y}}</b></h2>
+    </form>
+</body>
+</html>
